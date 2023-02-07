@@ -13,7 +13,7 @@ SQUARE_SIZE = 24
 criteria = (cv.TERM_CRITERIA_EPS + cv.TERM_CRITERIA_MAX_ITER, 30, 0.001)
 
 
-calib_data_path = "/Users/chaitalibhattacharyya/Desktop/finaltesting/final_calib_data_aver"
+calib_data_path = "/Users/yyya/Desktop/finaltesting/final_calib_data_aver"
 CHECK_DIR = os.path.isdir(calib_data_path)
 
 
@@ -37,7 +37,7 @@ print(obj_3D)
 obj_points_3D = []  
 img_points_2D = []  
 import glob
-image_files = glob.glob("/Users/chaitalibhattacharyya/Desktop/finaltesting/imgs_home/*.jpg")
+image_files = glob.glob("/Users/yyya/Desktop/finaltesting/imgs_home/*.jpg")
 
 for image in image_files:
     print(image)
@@ -74,7 +74,7 @@ print("-------------------------------------------")
 print("loading data stored using numpy savez function\n \n \n")
 
 
-img = cv.imread('/Users/chaitalibhattacharyya/Desktop/finaltesting/imgs_home/Photo on 2023-01-19 at 12.37.jpg')
+img = cv.imread('path of selected image')
 h,  w = img.shape[:2]
 newcameramtx, roi = cv.getOptimalNewCameraMatrix(mtx, dist, (w,h), 1, (w,h))
 
